@@ -1,4 +1,4 @@
-# Welcome to my third Repository - Source code C-Languge
+# Welcome to my third Repository - Source code C-Language
 
 ## You will find in this repo:
 
