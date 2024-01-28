@@ -1,0 +1,4 @@
+3
+John Doe  85.5 90.0 78.3
+Jane Smith  78.0 88.5 92.0
+Bob Johnson  90.2 87.5 79.8

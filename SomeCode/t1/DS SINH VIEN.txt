@@ -1,0 +1,8 @@
+
+DANH SACH SINH VIEN BI NHAC NHO:
+|MSSV: 100|Ten: Ngao|Diem mon 1: 1.00|Diem mon 2: 2.00|Diem mon 3: 3.00|
+
+DANH SACH SINH VIEN SAU KHI SAP XEP:
+|MSSV: 399|Ten: Kiet Hang|Diem mon 1: 7.00|Diem mon 2: 8.00|Diem mon 3: 9.00|
+|MSSV: 200|Ten: htl|Diem mon 1: 8.00|Diem mon 2: 5.00|Diem mon 3: 8.00|
+|MSSV: 100|Ten: Ngao|Diem mon 1: 1.00|Diem mon 2: 2.00|Diem mon 3: 3.00|
