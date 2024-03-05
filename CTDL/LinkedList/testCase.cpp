@@ -12,9 +12,12 @@ struct SList {
 	SNode* head;
 	SNode* tail;
 };
+void createList(Node* &head) {
+    pHead = NULL;
+}
 //khởi tạo 1 node mới
 SNode* createSNode(int x) {
-	SNode* newNode = new node();
+	SNode* newNode = new SNode();
 	
 	newNode->value = x;
 	newNode->next = NULL;
@@ -78,6 +81,15 @@ int count(node* head) {
 	return count;	
 }
 
+int removeHead(SList &sl, SNode* head) {
+	if(isEmpty(sl))
+		return 0;
+	SNode* p = new SNode;
+	p = sl.head;
+	sl.head = sl.head->next;
+	p->next = NULL;
+	delete(p);
+}
 //void addToHead(node** headNode, int value) {
 //	
 //	node* newNode = makeNode(value); 
@@ -101,11 +113,11 @@ int count(node* head) {
 //	
 //}
 int main(int argc, char** argv) {
-	node* head = NULL;
-	for(int i = 0; i < 6; i++)
-		addToHead(&head, i);
-	addToHead(head, 6);
-	printLinkedList(head);
+	SNode n1 = createSNode(1);
+	SNode n2 = createSNode(2);
+	SNode n3 = createSNode(3);
+	
+
 	cout << "The size of Linked list: "<<count(head);
 	return 0;
 }
