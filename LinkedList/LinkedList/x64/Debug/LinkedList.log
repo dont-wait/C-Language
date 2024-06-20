@@ -1,0 +1,3 @@
+﻿  LinkedList.cpp
+D:\C-Language\LinkedList\LinkedList\LinkedList.cpp(87): warning C4715: 'addAfter': not all control paths return a value
+  LinkedList.vcxproj -> D:\C-Language\LinkedList\x64\Debug\LinkedList.exe

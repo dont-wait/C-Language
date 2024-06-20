@@ -1,18 +1,27 @@
 #include <iostream>
+#include <stdio.h>
+#include <conio.h>
 using namespace std;
 struct node {
 	int data;
 	node* next;
-}
+};
 struct SList {
 	node* head;
 	node* tail;
 };
-node* makeNode(int x) {
-	node* newNode = new node();
-	newNode->data = x;
-	newNode->next = NULL;
-	return newNode;
+void initLinkedList(SList &sl) {
+	sl.head = NULL;
+	sl.tail = NULL;
+}
+node* createNewNode(int x) {
+	node* p = new node();
+	if(p == NULL)
+		cout << "CLEANED UP PLS";
+			
+	p->data = x;
+	p->next = NULL;
+	return p;
 }
 int isEmpty(SList sl) {
 	return sl.head == NULL;
@@ -21,22 +30,25 @@ int isEmpty(SList sl) {
 //		return 1;
 //	return 0;
 }
-
+//Câu chuyện về chàng trai lao công và và chủ chung cư
 void printLinkedList(SList sl) {
 	if(isEmpty(sl)) {
 		cout << "'Danh sach rong";
 		return;
 	}
-	node* p = sl.head;
-	while (p != NULL) {
-		cout << p->data;
+	node* p = sl.head;	//chủ nhà giao quyền quản lí căn chung cư
+						//								cho anh lao công
+	
+	//dọn tới khi nào không còn căn hộ nào nx thì thôi
+	while (p != NULL) {	
+		cout << p->data;	//dọn nhà
 		
 		if(p != NULL)
 			cout << "->";
 		else
 			cout << "\n";
 		
-		p = p->next;
+		p = p->next;	//tới địa chỉ căn bên dọn tiếp
 	}
 }
 int addToHead(SList &sl, node* p) {
@@ -132,10 +144,14 @@ int getSumLinkedList(SList sl) {
 	
 }
 int checkLastOddNode(SList sl) {
-
 	return (sl.tail->data % 2 != 0)
 }
 int main(int argc, char** argv) {
-	
+	SList sl;
+	initLinkedList(sl);
+	addToHead(sl, createNewNode(5));
+	addToHead(sl, createNewNode(7));
+	printLinkedList(sl);
+	 
 	return 0;
 }

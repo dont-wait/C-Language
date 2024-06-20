@@ -11,6 +11,6 @@ void mergeSort(int a[], int size) {
 	int left = 0, right = size - 1;
 	int middle = (left + right) / 2; 
 	
-	
+
 	
 }
